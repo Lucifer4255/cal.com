@@ -66,9 +66,9 @@
     "lint:fix": "eslint . --fix",
     "lint:report": "eslint . --format json --output-file ../../lint-results/ui.json",
     "dx": "node ./scripts/build-icons.mjs",
-    "dev": "node ./scripts/build-icons.mjs",
-    "build": "node ./scripts/build-icons.mjs",
-    "build:icons": "node ./scripts/build-icons.mjs"
+    "dev": "node init && node ./scripts/build-icons.mjs",
+    "build": "node init && node ./scripts/build-icons.mjs",
+    "build:icons": "node init && node ./scripts/build-icons.mjs"
   },
   "dependencies": {
     "@calcom/lib": "*",

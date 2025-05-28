@@ -4,9 +4,9 @@
   "main": "./dist/index.js",
   "types": "./dist/index.js",
   "scripts": {
-    "build": "yarn clean && tsc --build --force tsconfig.json",
+    "build": "node init && yarn clean && tsc --build --force tsconfig.json",
     "clean": "rm -rf ./dist",
-    "build:watch": "tsc --build --force ./tsconfig.json --watch",
+    "build:watch": "node init && tsc --build --force ./tsconfig.json --watch",
     "post-install": "yarn build"
   },
   "dependencies": {

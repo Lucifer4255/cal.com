@@ -12,7 +12,7 @@
     "directory": "packages/embeds/embed-snippet"
   },
   "scripts": {
-    "build": "rm -rf dist && vite build && tsc --emitDeclarationOnly --declarationDir dist",
+    "build": "node init && rm -rf dist && vite build && tsc --emitDeclarationOnly --declarationDir dist",
     "type-check": "tsc --pretty --noEmit",
     "type-check:ci": "tsc-absolute --pretty --noEmit",
     "lint": "eslint --ext .ts,.js src",
