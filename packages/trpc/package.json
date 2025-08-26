@@ -9,7 +9,7 @@
   "scripts": {
     "lint": "eslint . --ext .ts,.tsx",
     "lint:fix": "eslint . --ext .ts,.tsx --fix",
-    "build": "yarn trpc:generate || true",
+    "build": "node init && yarn trpc:generate || true",
     "trpc:generate": "yarn tsc --project tsconfig.json"
   },
   "dependencies": {
@@ -22,6 +22,6 @@
     "zod": "^3.22.4"
   },
   "devDependencies": {
-    "typescript": "^5.8.3"
+    "typescript": "^5.9.0-beta"
   }
 }
